@@ -39,25 +39,11 @@
 					</div>
 					<ul class="nav nav-primary">
 						<li class="nav-item active">
-							<a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+							<a data-toggle="collapse" href="index.php" class="collapsed" aria-expanded="false">
 								<i class="fas fa-home"></i>
-								<p>Dashboard</p>
-								<span class="caret"></span>
+								<p>Inicio</p>
+								<!-- <span class="caret"></span> -->
 							</a>
-							<div class="collapse" id="dashboard">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="../demo1/index.html">
-											<span class="sub-item">Dashboard 1</span>
-										</a>
-									</li>
-									<li>
-										<a href="../demo2/index.html">
-											<span class="sub-item">Dashboard 2</span>
-										</a>
-									</li>
-								</ul>
-							</div>
 						</li>
 						<li class="nav-section">
 							<span class="sidebar-mini-icon">
@@ -294,9 +280,9 @@
 								</ul>
 							</div>
 						</li>
-						<li class="mx-4 mt-2">
+						<!-- <li class="mx-4 mt-2">
 							<a href="http://themekita.com/atlantis-bootstrap-dashboard.html" class="btn btn-primary btn-block"><span class="btn-label mr-2"> <i class="fa fa-heart"></i> </span>Buy Pro</a> 
-						</li>
+						</li> -->
 					</ul>
 				</div>
 			</div>

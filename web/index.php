@@ -19,6 +19,9 @@ echo "<div class='wrapper'>";
 	// <!-- sidebar -->
 	include_once '../view/partials/sidebar.php';
 
+
+	echo '<div class="main-panel">';
+
 	
 	if (isset($_GET['modulo'])) {
 		resolve();
@@ -26,6 +29,11 @@ echo "<div class='wrapper'>";
 		// <!-- home -->
 		include_once '../view/partials/home.php';
 	}
+
+
+	include_once '../view/partials/copy.php';
+
+	echo '</div>';
 	
 echo "</div>";
 
