@@ -1,5 +1,10 @@
 <?php
 
+
+include_once '../lib/helpers.php';
+// include_once '../lib/helpersLogin.php';
+
+
 echo "<!DOCTYPE html>";
 echo "<html lang='en'>";
 
@@ -14,9 +19,14 @@ echo "<div class='wrapper'>";
 	// <!-- sidebar -->
 	include_once '../view/partials/sidebar.php';
 
-	// <!-- home -->
-	include_once '../view/partials/home.php';
-		
+	
+	if (isset($_GET['modulo'])) {
+		resolve();
+	}else{
+		// <!-- home -->
+		include_once '../view/partials/home.php';
+	}
+	
 echo "</div>";
 
 echo "</body>";
