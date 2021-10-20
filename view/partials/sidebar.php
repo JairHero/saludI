@@ -159,7 +159,7 @@
 							<div class="collapse" id="opcionesHistoriaClinica">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="sidebar-style-1.html">
+										<a href="<?= getUrl('HistoriaClinica','HistoriaClinica','cargarHistorias')?>">
 											<span class="sub-item">Escanear Historia Clinica</span>
 										</a>
 									</li>
