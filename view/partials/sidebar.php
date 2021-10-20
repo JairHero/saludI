@@ -77,6 +77,24 @@
 								</ul>
 							</div>
 						</li>
+
+						<!-- menu de historia clinica -->
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#opcionesHistoriaClinica">
+								<i class="fas fa-th-list"></i>
+								<p>Historia Clinica</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="opcionesHistoriaClinica">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="<?= getUrl('HistoriaClinica','HistoriaClinica','cargarHistorias')?>">
+											<span class="sub-item">Escanear Historia Clinica</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
 						<!-- <li class="mx-4 mt-2">
 							<a href="http://themekita.com/atlantis-bootstrap-dashboard.html" class="btn btn-primary btn-block"><span class="btn-label mr-2"> <i class="fa fa-heart"></i> </span>Buy Pro</a> 
 						</li> -->
