@@ -11,16 +11,14 @@
 
 		echo "<body>";
 		
-			// <!-- navbar -->
-			include_once '../view/partials/navbar.php';
-			// <!-- sidebar -->
-			include_once '../view/partials/sidebar.php';
-			
 			echo "<div class='wrapper'>";
-
+				// <!-- navbar -->
+				include_once '../view/partials/navbar.php';
+				// <!-- sidebar -->
+				include_once '../view/partials/sidebar.php';
+			
 				echo '<div class="main-panel">';
 
-			
 					if (isset($_GET['modulo'])) {
 						resolve();
 					}else{
