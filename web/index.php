@@ -4,39 +4,37 @@
 	// include_once '../lib/helpersLogin.php';
 
 	echo "<!DOCTYPE html>";
-	echo "<html lang='en'>";
+	echo "<html lang='es'>";
 
 	// <!-- header -->
 		include_once '../view/partials/header.php';
 
 		echo "<body>";
+		
+			// <!-- navbar -->
+			include_once '../view/partials/navbar.php';
+			// <!-- sidebar -->
+			include_once '../view/partials/sidebar.php';
+			
 			echo "<div class='wrapper'>";
 
-		// <!-- navbar -->
-		include_once '../view/partials/navbar.php';
+				echo '<div class="main-panel">';
 
-		// <!-- sidebar -->
-		include_once '../view/partials/sidebar.php';
+			
+					if (isset($_GET['modulo'])) {
+						resolve();
+					}else{
+						// <!-- home -->
+						include_once '../view/partials/home.php';
+					}
 
+					include_once '../view/partials/copy.php';
 
-		echo '<div class="main-panel">';
-
+				echo '</div>';
 		
-		if (isset($_GET['modulo'])) {
-			resolve();
-		}else{
-			// <!-- home -->
-			include_once '../view/partials/home.php';
-		}
+			echo "</div>";
 
-
-		include_once '../view/partials/copy.php';
-
-		echo '</div>';
-		
-	echo "</div>";
-
-	echo "</body>";
+		echo "</body>";
 
 
 	// <!-- footer -->
