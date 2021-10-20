@@ -1,10 +1,8 @@
 <?php
-    // require '../model/HistoriaCLinicaModel.php';
-    
-    
+    include_once '../model/historiaClinica/HistoriaClinicaModel.php';
     class HistoriaClinicaController {
         
-        function cargarHistorias(){
+        public function cargarHistorias(){
             
             include_once '../view/cargaHistoriaClinica/cargaHistoriaClinica.php';
 
