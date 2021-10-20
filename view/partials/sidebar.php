@@ -148,6 +148,25 @@
 								</ul>
 							</div>
 						</li>
+
+						<!-- menu de historia clinica -->
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#opcionesHistoriaClinica">
+								<i class="fas fa-th-list"></i>
+								<p>Historia Clinica</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="opcionesHistoriaClinica">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="sidebar-style-1.html">
+											<span class="sub-item">Escanear Historia Clinica</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#forms">
 								<i class="fas fa-pen-square"></i>
