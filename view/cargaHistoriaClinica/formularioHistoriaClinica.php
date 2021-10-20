@@ -20,7 +20,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="card-head-row">
-                            <div class="card-title">Cargar Historia Clinica</div>
+                            <div class="card-title">Historia Clinica</div>
                             <div class="card-tools">
                                 <a href="" class="btn btn-info btn-border btn-round btn-sm mr-2">
                                     <span class="btn-label">
@@ -35,40 +35,9 @@
 
                     <div class="card-body">
                         <form action="<?= getUrl('HistoriaClinica','HistoriaClinica','convertirImagenaTexto');?>" enctype="multipart/form-data" method="POST">
-
                             <div class="chart-container" style="min-height: 375px">
-                                <div class="">
-                                    <div class="d-inline">
-                                        <span>Paso 1</span>
-                                        <img src="#" alt="">
-                                    </div>
-                                    <div class="d-inline">
-                                        <span>Paso 2</span>
-                                        <img src="#" alt="">
-                                    </div>
-                                    <div class="d-inline">
-                                        <span>Paso 3</span>
-                                        <img src="#" alt="">
-                                    </div>
-                                </div>
-
-                                <label for="">Seleccione una Imagen:</label>
-                                <input type="file" name="imgHistoria" id="imgHistoria">
-
-                                <div>
-                                    <?php 
-                                    $error = 1;
-                                    
-                                    if ($error === 0) {
-
-                                        echo "Error detectando texto. Por favor verifique que la imagen existe y que el programa de detección está instalado y es accesible desde PHP. El código de salida es: " . $codigoSalida;
-                        
-                                    }
-                                    ?>
-                                </div>
-                            </div>
-                            <div>
-                                <input type="submit" value="Escanear">
+                            <label for="numeroCedula">Cedula de Ciudadania: </label>
+                                <input type="text" name="numeroCedula" id="numeroCedula" value="<?= $CEDULA?>">
                             </div>
                         </form>
                     </div>
