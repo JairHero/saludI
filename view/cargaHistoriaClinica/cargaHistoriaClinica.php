@@ -39,10 +39,16 @@
                                 <label for="">Seleccione una Imagen:</label>
                                 <input type="file" name="imgHistoria" id="imgHistoria">
                                 <div>
-                                    resultados: <br>
-                                    <?php echo '<pre>';
-                                    echo $textoComoCadena;
-                                    echo '</pre>'; ?>
+                                    <?php
+                                    // var_dump($_REQUEST);
+                                    // exit;
+                                    // if (!empty($_FILE)) {
+                                        echo 'resultados: <br>';
+                                        echo '<pre>';
+                                        echo $textoComoCadena;
+                                        echo '</pre>';
+                                    // } 
+                                    ?>
                                 </div>
                             </div>
                             <div>
