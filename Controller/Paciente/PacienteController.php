@@ -10,7 +10,7 @@
 
         }
 
-        public function insert(){
+        public function getInsert(){
 
 
             include_once '../view/Paciente/insert.php';

@@ -1,13 +1,13 @@
 <div class="content">
     <div class="page-inner">
         <div class="page-header">
-            <h4 class="page-title">Paciente</h4>
+            <h4 class="page-title">Medico</h4>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-title">Registrar Paciente</div>
+                        <div class="card-title">Registrar Medico</div>
                     </div>
                     <div class="card-body">
                         <form action="" class="row">
@@ -168,7 +168,7 @@
                             </div>
 
                             <div class="form-group col-md-6 col-sm-6">
-                                <label for="exampleFormControlSelect1">Tipo de afiliado<b style="color:red;">*</b></label>
+                                <label for="exampleFormControlSelect1">Ips<b style="color:red;">*</b></label>
                                 <select class="form-control" id="exampleFormControlSelect1">
                                     <option>1</option>
                                     <option>2</option>

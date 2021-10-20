@@ -9,7 +9,7 @@
 								<div class="card-header">
 									<div class="d-flex">
                                         <h4 class="card-title">Pacientes</h4>
-                                        <a href="<?php echo getUrl("Paciente", "Paciente", "getInsert");?>"><button class="btn btn-success ml-auto btn-round">Create</button></a> 
+                                        <a href="<?php echo getUrl("Paciente", "Paciente", "getInsert");?>" class="ml-auto"><button class="btn btn-success btn-round">Create</button></a> 
                                     </div>
 								</div>
 								<div class="card-body">
