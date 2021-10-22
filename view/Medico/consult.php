@@ -23,7 +23,7 @@
                                         <th>Tipo de documento</th>
                                         <th>Numero de documento</th>
                                         <th>Ips</th>
-                                        <th>Actons</th>
+                                        <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
