@@ -29,7 +29,7 @@
                 // $cadena_buscada   = 'CEDULA CIUDADANIA';
                 // $posicion_coincidencia = strpos($cadena_de_texto, $cadena_buscada);
                 // $posicion_coincidencia += 18;
-
+                
                 // $CEDULA = substr($cadena_de_texto, ($posicion_coincidencia), 10 );
                 
                 // //se puede hacer la comparacion con 'false' o 'true' y los comparadores '===' o '!=='
@@ -39,13 +39,10 @@
                 //     include_once '../view/cargaHistoriaClinica/formularioHistoriaClinica.php';
                 // }
 
-            } else {
-                $error = 0;
-    
-                include_once '../view/cargaHistoriaClinica/cargaHistoriaClinica.php';
+                include_once '../view/cargaHistoriaClinica/formularioHistoriaClinica.php';
+                
 
             }
-            
         }
     }
 
