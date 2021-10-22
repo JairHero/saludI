@@ -4,8 +4,6 @@
 
     class MedicoController{
         public function consult(){
-          
-            
 
             include_once '../view/Medico/consult.php';
 
