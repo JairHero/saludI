@@ -36,11 +36,15 @@
                     <div class="card-body">
                         <form action="<?= getUrl('HistoriaClinica','HistoriaClinica','convertirImagenaTexto');?>" enctype="multipart/form-data" method="POST">
                             <div class="chart-container" style="min-height: 375px">
+<<<<<<< HEAD
                             <?php 
                                 echo '<pre>
                                     "'.$cadena_de_texto.'"
                                 </pre>'
                             ?>
+=======
+                            <?php echo '<div>'.$textoComoCadena.'</div>'; ?>
+>>>>>>> 73607adf8dc87f26b7d31bc71d23f624e1dd0ae7
                             <label for="numeroCedula">Cedula de Ciudadania: </label>
                                 <input type="text" name="numeroCedula" id="numeroCedula" value="<?= $CEDULA?>">
                             </div>

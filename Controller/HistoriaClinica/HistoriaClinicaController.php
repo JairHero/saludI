@@ -10,9 +10,12 @@
 
         public function convertirImagenaTexto(){
             
-            if (!isset($_FILES["imgHistoria"])) {
-                exit("No hay imagen");
-            }
+            // if (!isset($_FILES["imgHistoria"])) {
+
+            //     $faltaImagen = 0;
+    
+            //     include_once '../view/cargaHistoriaClinica/cargaHistoriaClinica.php';
+            // }
         
             $imagen = $_FILES["imgHistoria"];
             $ubicacionImagen = $imagen["tmp_name"];
@@ -23,6 +26,8 @@
             if ($codigoSalida === 0) {
                 // Tenemos el texto como un array, podemos unirlo
                 $textoComoCadena = join("\n", $textoDetectado);
+                var_dump($textoComoCadena);
+                exit;
                 // aqui colocamos la cadena de texto de la cual vamos a extraer la informacion
                 $cadena_de_texto = $textoComoCadena;
                 // se coloca la palabra que estamos buscando
