@@ -7,7 +7,7 @@
           
             $obj=new MedicoModel();
 
-            $sql="SELECT pacId, perNombres, perApellidos, tdoDescripcion, perDocumeno, ipsDescripcion, Est_nombre FROM tblarticulo natural join tbltipoarticulo natural join tblmedida natural join TblEstado";
+            $sql="SELECT medId, perNombres, perApellidos, tdoDescripcion, perDocumeno, ipsDescripcion FROM tblPersona tbltipoarticulo natural join tblmedida natural join TblEstado";
 
             $articulos=$obj->consult($sql);
 

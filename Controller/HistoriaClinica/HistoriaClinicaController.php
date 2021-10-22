@@ -26,18 +26,18 @@
                 // aqui colocamos la cadena de texto de la cual vamos a extraer la informacion
                 $cadena_de_texto = $textoComoCadena;
                 // se coloca la palabra que estamos buscando
-                $cadena_buscada   = 'CEDULA CIUDADANIA';
-                $posicion_coincidencia = strpos($cadena_de_texto, $cadena_buscada);
-                $posicion_coincidencia += 18;
+                // $cadena_buscada   = 'CEDULA CIUDADANIA';
+                // $posicion_coincidencia = strpos($cadena_de_texto, $cadena_buscada);
+                // $posicion_coincidencia += 18;
 
-                $CEDULA = substr($cadena_de_texto, ($posicion_coincidencia), 10 );
+                // $CEDULA = substr($cadena_de_texto, ($posicion_coincidencia), 10 );
                 
-                //se puede hacer la comparacion con 'false' o 'true' y los comparadores '===' o '!=='
-                if ($posicion_coincidencia === false) {
-                    echo "NO se ha encontrado la palabra deseada!!!!";
-                } else {
-                    include_once '../view/cargaHistoriaClinica/formularioHistoriaClinica.php';
-                }
+                // //se puede hacer la comparacion con 'false' o 'true' y los comparadores '===' o '!=='
+                // if ($posicion_coincidencia === false) {
+                //     echo "NO se ha encontrado la palabra deseada!!!!";
+                // } else {
+                //     include_once '../view/cargaHistoriaClinica/formularioHistoriaClinica.php';
+                // }
 
             } else {
                 $error = 0;
