@@ -68,6 +68,12 @@
                                 <input class="btn btn-secondary mt-4" type="submit" value="Escanear">
                             </div>
                         </form>
+
+                        <br>
+
+                        Hola, Click para ejecutar la conversion.
+                        <button class="btn" href="<?= getUrl('HistoriaClinica','HistoriaClinica','convertirImagenPdf');?>">Ejecutar Conversion</button>
+
                     </div>
                 </div>
             </div>
