@@ -55,18 +55,7 @@
                                 <label for="">Seleccione una Imagen:</label>
                                 <input type="file" name="imgHistoria" id="imgHistoria">
 
-                                <div>
-                                    <?php 
-                                    if ($_REQUEST['funcion'] !== 'cargarHistorias') {
-                                        
-                                        if ($error == 0) {
-    
-                                            echo "Error detectando texto. Por favor verifique que la imagen existe y que el programa de detección está instalado y es accesible desde PHP. El código de salida es: " . $codigoSalida;
-                            
-                                        }
-                                    }
-
-                                    ?>
+                                <div>  
                                 </div>
                             </div>
                             <div>

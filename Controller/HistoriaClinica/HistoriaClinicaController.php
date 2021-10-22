@@ -9,27 +9,28 @@
         }
 
         public function convertirImagenaTexto(){
-            
-            // if (!isset($_FILES["imgHistoria"])) {
+            // var_dump($_FILES);
+            // exit;
+            if (!isset($_FILES["imgHistoria"])) {
 
-            //     $faltaImagen = 0;
+                // $faltaImagen = 0;
     
-            //     include_once '../view/cargaHistoriaClinica/cargaHistoriaClinica.php';
-            // }
+                include_once '../view/cargaHistoriaClinica/cargaHistoriaClinica.php';
+            }
         
             $imagen = $_FILES["imgHistoria"];
             $ubicacionImagen = $imagen["tmp_name"];
             $comando = "tesseract " . escapeshellarg($ubicacionImagen) . " stdout -l spa ";
         
             exec($comando, $textoDetectado, $codigoSalida);
-        
+
+            
             if ($codigoSalida === 0) {
                 // Tenemos el texto como un array, podemos unirlo
                 $textoComoCadena = join("\n", $textoDetectado);
-                var_dump($textoComoCadena);
-                exit;
                 // aqui colocamos la cadena de texto de la cual vamos a extraer la informacion
                 $cadena_de_texto = $textoComoCadena;
+               
                 // se coloca la palabra que estamos buscando
                 // $cadena_buscada   = 'CEDULA CIUDADANIA';
                 // $posicion_coincidencia = strpos($cadena_de_texto, $cadena_buscada);
@@ -39,14 +40,13 @@
                 
                 // //se puede hacer la comparacion con 'false' o 'true' y los comparadores '===' o '!=='
                 // if ($posicion_coincidencia === false) {
-                //     echo "NO se ha encontrado la palabra deseada!!!!";
-                // } else {
-                //     include_once '../view/cargaHistoriaClinica/formularioHistoriaClinica.php';
-                // }
-
+                    //     echo "NO se ha encontrado la palabra deseada!!!!";
+                    // } else {
+                        //     include_once '../view/cargaHistoriaClinica/formularioHistoriaClinica.php';
+                        // }
+                        
                 include_once '../view/cargaHistoriaClinica/formularioHistoriaClinica.php';
-                
-
+                        
             }
         }
     }
