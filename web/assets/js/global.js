@@ -32,4 +32,15 @@ $(document).ready(function(){
             }
         });
     });
+
+    $(document).on("click","#botonModal",function(){
+        var url=$(this).attr('data-url');
+        var titulo=$(this).val();
+        var datos=$(this).attr('data-id');
+        if (datos==""){
+            datos==0;
+        }
+        $("#modal").modal("show");
+    });
 });
+

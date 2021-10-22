@@ -31,7 +31,7 @@
 				echo '</div>';
 		
 			echo "</div>";
-
+			include_once '../view/partials/modal.php';
 		echo "</body>";
 
 
