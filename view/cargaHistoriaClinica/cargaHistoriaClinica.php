@@ -57,13 +57,15 @@
 
                                 <div>
                                     <?php 
-                                    $error = 1;
-                                    
-                                    if ($error === 0) {
-
-                                        echo "Error detectando texto. Por favor verifique que la imagen existe y que el programa de detección está instalado y es accesible desde PHP. El código de salida es: " . $codigoSalida;
-                        
+                                    if ($_REQUEST['funcion'] !== 'cargarHistorias') {
+                                        
+                                        if ($error == 0) {
+    
+                                            echo "Error detectando texto. Por favor verifique que la imagen existe y que el programa de detección está instalado y es accesible desde PHP. El código de salida es: " . $codigoSalida;
+                            
+                                        }
                                     }
+
                                     ?>
                                 </div>
                             </div>
