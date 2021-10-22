@@ -52,14 +52,27 @@
 							<h4 class="text-section">Components</h4>
 						</li>
 						<li class="nav-item">
-							<a data-toggle="collapse" href="#base">
+							<a data-toggle="collapse" href="#paciente">
 								<i class="icon-user"></i>
-								<p>Pacientes</p>
+								<p>Paciente</p>
 								<span class="caret"></span>
 							</a>
-							<div class="collapse" id="base">
+							<div class="collapse" id="paciente">
 								<ul class="nav nav-collapse">
-									<li><a href="<?php echo getUrl("Paciente", "Paciente", "consult");?>">Paciente</a></li>
+									<li><a href="<?php echo getUrl("Paciente", "Paciente", "consult");?>">Consultar Pacientes</a></li>
+
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#medico">
+								<i class="icon-user"></i>
+								<p>Medico</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="medico">
+								<ul class="nav nav-collapse">
+									<li><a href="<?php echo getUrl("Medico", "Medico", "consult");?>">Consultar Paciente</a></li>
 
 								</ul>
 							</div>
