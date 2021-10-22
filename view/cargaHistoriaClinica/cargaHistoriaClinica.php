@@ -37,18 +37,19 @@
                         <form action="<?= getUrl('HistoriaClinica','HistoriaClinica','convertirImagenaTexto');?>" enctype="multipart/form-data" method="POST">
 
                             <div class="chart-container" style="min-height: 375px">
-                                <div class="">
+                                <div class="mb-5">
                                     <div class="d-inline">
                                         <span>Paso 1</span>
-                                        <img src="#" alt="">
+                                        <img src="img/paso1.jpg" style="width: 100px;">
                                     </div>
+
                                     <div class="d-inline">
                                         <span>Paso 2</span>
-                                        <img src="#" alt="">
+                                        <img src="#" style="width: 100px;">
                                     </div>
                                     <div class="d-inline">
                                         <span>Paso 3</span>
-                                        <img src="#" alt="">
+                                        <img src="#" style="width: 100px;">
                                     </div>
                                 </div>
 
