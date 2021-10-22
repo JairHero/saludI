@@ -38,35 +38,39 @@
 
                             <div class="chart-container" style="min-height: 375px">
                                 <div class="mb-5">
-                                    <div class="d-inline">
+                                    <h1>Tutorial.</h1>
+
+                                    <label class="form-label" for="imgHistoria">Seleccione una Imagen:</label>
+                                <input class="form-control" type="file" name="imgHistoria" id="imgHistoria">
+
+
+                                    <div class="d-inline ">
                                         <span>Paso 1</span>
-                                        <img src="img/paso1.jpg" style="width: 100px;">
+                                        <img class="border border-5 m-5" src="img/paso1.jpg" style="width: 250px; height: 100px;">
                                     </div>
 
                                     <div class="d-inline">
                                         <span>Paso 2</span>
-                                        <img src="#" style="width: 100px;">
+                                        <img class="border border-5 m-5" src="img/paso2.jpg" style="width: 250px;">
                                     </div>
+
                                     <div class="d-inline">
                                         <span>Paso 3</span>
-                                        <img src="#" style="width: 100px;">
+                                        <img class="border border-5 m-5" src="img/paso3.jpg" style="width: 250px;">
                                     </div>
                                 </div>
 
-                                <label for="">Seleccione una Imagen:</label>
-                                <input type="file" name="imgHistoria" id="imgHistoria">
-
+                                
                                 <div>  
                                 </div>
                             </div>
                             <div>
-                                <input type="submit" value="Escanear">
+                                <input class="btn btn-secondary mt-4" type="submit" value="Escanear">
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
 </div>

@@ -67,7 +67,7 @@
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#medico">
 								<i class="icon-user"></i>
-								<p>Medico</p>
+								<p>Enfermero(a)</p>
 								<span class="caret"></span>
 							</a>
 							<div class="collapse" id="medico">
